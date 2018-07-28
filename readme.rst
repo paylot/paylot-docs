@@ -5,7 +5,7 @@ This is the documentation for integration of Paylot inline javascript
 client.
 
 **NB:** Before you can start integrating Paylot, you will need a Paylot
-account. Create a free account now if you haven’t already done so:
+account. Create a free account now if you haven't already done so:
 https://beta.paylot.co/signup.
 
 After that, you can proceed to add a merchant/business at
@@ -49,7 +49,7 @@ This HTML code shows a simple way to integrate Paylot into your webpage.
 .. code:: html
 
    <form >
-       <script src="https://paylot-payment-widget.herokuapp.com/js/client.js"></script>
+       <script src="https://js.paylot.co/v1/inline.min.js"></script>
        <button type="button" onclick="pay()"> Pay </button> 
    </form>
 
