@@ -157,13 +157,6 @@ stated below.
 **NB:** These are the same parameters posted to the call back url which
 can be set in the business profile.
 
-.. toctree:: 
-    :caption: Table of Contents 
-    :maxdepth: 2
-
-    docs/index
-    docs/verification
-
 .. |Image One| image:: https://res.cloudinary.com/dozie/image/upload/v1536582441/paylot_instructions_01.png
 .. |Image Two| image:: https://res.cloudinary.com/dozie/image/upload/v1536582444/paylot_instructions_02.png
 
