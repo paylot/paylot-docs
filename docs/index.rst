@@ -161,6 +161,7 @@ can be set in the business profile.
     :caption: Table of Contents 
     :maxdepth: 2
 
+    index
     verification
 
 .. |Image One| image:: https://res.cloudinary.com/dozie/image/upload/v1536582441/paylot_instructions_01.png
