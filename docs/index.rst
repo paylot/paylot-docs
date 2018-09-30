@@ -1,5 +1,5 @@
-Paylot Integration
-==================
+Introduction
+============
 
 This is the documentation for integration of Paylot inline javascript
 client.
@@ -157,8 +157,11 @@ stated below.
 **NB:** These are the same parameters posted to the call back url which
 can be set in the business profile.
 
-To learn about checking/verifying transactions, go to `Transaction
-Verification </docs/verification.md>`__
+.. toctree:: 
+    :caption: Table of Contents 
+    :maxdepth: 2
+
+    verification
 
 .. |Image One| image:: https://res.cloudinary.com/dozie/image/upload/v1536582441/paylot_instructions_01.png
 .. |Image Two| image:: https://res.cloudinary.com/dozie/image/upload/v1536582444/paylot_instructions_02.png
