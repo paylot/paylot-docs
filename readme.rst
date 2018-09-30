@@ -5,7 +5,7 @@ This is the documentation for integration of Paylot inline javascript
 client.
 
 **NB:** Before you can start integrating Paylot, you will need a Paylot
-account. Create a free account now if you haven't already done so:
+account. Create a free account now if you haven’t already done so:
 https://beta.paylot.co/signup.
 
 After that, you can proceed to add a merchant/business at
@@ -31,15 +31,11 @@ key, go to your merchant profile by clicking one of your businesses on
 your dashboard @ https://beta.paylot.co/dashboard and then clicking
 profile on the sidebar.
 
-.. figure:: https://paper.dropbox.com/ep/redirect/image?url=https%3A%2F%2Fd2mxuefqeaa7sj.cloudfront.net%2Fs_35814BAC5F7624142CDDFC983969C815F29CF37B2336DA8B86FD0AF1CAB80DB6_1531410955555_image.png&hmac=%2F4nRKSQKHKOD81K9wVYMXQxkF8LA%2BOIFZDum%2FNPqi8A%3D
-   :alt: Image One
-
-   Image One
-
-.. figure:: https://paper.dropbox.com/ep/redirect/image?url=https%3A%2F%2Fd2mxuefqeaa7sj.cloudfront.net%2Fs_35814BAC5F7624142CDDFC983969C815F29CF37B2336DA8B86FD0AF1CAB80DB6_1531410653540_image.png&hmac=h2jGhD8grjEFqwKE45T6JVYm5QMvTvB9ED%2BENDgEohQ%3D
-   :alt: Image Two
-
-   Image Two
++-------------------+------------------+
+| Clicking Business | Clicking profile |
++===================+==================+
+| |Image One|       | |Image Two|      |
++-------------------+------------------+
 
 Integration Code
 ----------------
@@ -49,7 +45,7 @@ This HTML code shows a simple way to integrate Paylot into your webpage.
 .. code:: html
 
    <form >
-       <script src="https://js.paylot.co/v1/inline.min.js"></script>
+       <script src="https://paylot-payment-widget.herokuapp.com/js/client.js"></script>
        <button type="button" onclick="pay()"> Pay </button> 
    </form>
 
@@ -57,8 +53,8 @@ This HTML code shows a simple way to integrate Paylot into your webpage.
      function pay(){
        paylot({
            amount: 10000,
-           secret: '498eac70-6fde-11e8-a9f9-1f1f6cb61ea8',
-           merchant: '5b227a029674d8001475a19b',
+           key: 'pyt_pk-6efec0d34c8147eba4de783714c6eae7',
+           reference: Date.now(),
            currency: 'NGN',
            payload: {
                type: 'payment',
@@ -69,8 +65,13 @@ This HTML code shows a simple way to integrate Paylot into your webpage.
            onClose: function(){
                console.log('I just closed the payment modal');
            }
-       }, (tx, error) => {
-           console.log(tx);
+       }, (err, tx) => {
+           if(err){
+               console.log('An error has occured');
+           }else{
+               //Transaction was successful
+               console.log(tx);
+           }
        });
      }
    </script>
@@ -85,18 +86,80 @@ Configuration options
 +===================================+===================================+
 | amount \*                         | The amount to be paid (number)    |
 +-----------------------------------+-----------------------------------+
-| merchant\*                        | The merchant Id (string)          |
+| key \*                            | The merchant public key (string)  |
++-----------------------------------+-----------------------------------+
+| reference \*                      | A unique reference that           |
+|                                   | identifies your transaction. If   |
+|                                   | not found, a random reference     |
+|                                   | would be generated (string)       |
 +-----------------------------------+-----------------------------------+
 | currency\*                        | The base currency (NGN, BTC, ETH, |
 |                                   | LTC & BCH allowed) (string)       |
-+-----------------------------------+-----------------------------------+
-| secret\*                          | The merchant integration key      |
-|                                   | (string)                          |
 +-----------------------------------+-----------------------------------+
 | payload.email                     | The email of the customer         |
 |                                   | (string)                          |
 +-----------------------------------+-----------------------------------+
 | payload.type                      | The type of payment (string)      |
 +-----------------------------------+-----------------------------------+
-| p                                 |                                   |
+| payload.sendMail                  | Determines whether an email       |
+|                                   | should be sent to the user or not |
+|                                   | (boolean)                         |
 +-----------------------------------+-----------------------------------+
+| onClose                           | Function called when popup is     |
+|                                   | closed                            |
++-----------------------------------+-----------------------------------+
+
+Callback Parameters
+-------------------
+
+The paylot function has the following signature.
+
+.. code:: javascript
+
+   function paylot(options, callback);
+
+Options specifies the Configuration options as highlighted above while
+callback takes the form of normal javascript callbacks i.e. accepts a
+function with the following signature.
+
+.. code:: javascript
+
+   function callback(error, data);
+
+Here, in the absence of errors, the data parameter will contain the
+transaction details and is an object with the following properties
+stated below.
+
++-----------------------------------+-----------------------------------+
+| Parameter                         | Description                       |
++===================================+===================================+
+| reference                         | The transaction reference. Pay    |
+|                                   | attention to this if you didn’t   |
+|                                   | create a reference manually.      |
+|                                   | (string)                          |
++-----------------------------------+-----------------------------------+
+| sent                              | Specifies if payment was made     |
+|                                   | successfully (boolean)            |
++-----------------------------------+-----------------------------------+
+| confirmed                         | Specifies if the payment has been |
+|                                   | confirmed on the blockchain       |
+|                                   | (boolean)                         |
++-----------------------------------+-----------------------------------+
+| amount                            | Specifies the intended amount in  |
+|                                   | the currency selected during      |
+|                                   | payment (number)                  |
++-----------------------------------+-----------------------------------+
+| amountSent                        | Specifies the actual amount that  |
+|                                   | was sent to the blockchain        |
+|                                   | (number)                          |
++-----------------------------------+-----------------------------------+
+
+**NB:** These are the same parameters posted to the call back url which
+can be set in the business profile.
+
+To learn about checking/verifying transactions, go to `Transaction
+Verification </docs/verification.md>`__
+
+.. |Image One| image:: https://res.cloudinary.com/dozie/image/upload/v1536582441/paylot_instructions_01.png
+.. |Image Two| image:: https://res.cloudinary.com/dozie/image/upload/v1536582444/paylot_instructions_02.png
+
