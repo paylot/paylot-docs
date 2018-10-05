@@ -18,11 +18,11 @@ prefer to store it as (For now, Naira).
 
 Once you are done. You are good to go.
 
-Paylot Inline offers a simple, secure and convenient payment flow for
-web and mobile. It can be integrated with a line of code thereby making
-it the easiest way to start accepting payments. It also makes it
-possible to start and end the payment flow on the same page, thus
-combating redirect fatigue.
+Paylot inline javascript client offers a simple, secure and convenient
+payment flow for web and mobile. It can be integrated with a line of
+code thereby making it the easiest way to start accepting payments. It
+also makes it possible to start and end the payment flow on the same
+page, thus combating redirect fatigue.
 
 Here is a sample code that calls Paylot and also handles outcome.
 
@@ -157,12 +157,9 @@ stated below.
 **NB:** These are the same parameters posted to the call back url which
 can be set in the business profile.
 
-.. toctree:: 
-    :caption: Table of Contents 
-    :maxdepth: 2
+.. toctree:: :caption: Table of Contents :maxdepth: 2
 
-    index
-    verification
+index verification
 
 .. |Image One| image:: https://res.cloudinary.com/dozie/image/upload/v1536582441/paylot_instructions_01.png
 .. |Image Two| image:: https://res.cloudinary.com/dozie/image/upload/v1536582444/paylot_instructions_02.png
