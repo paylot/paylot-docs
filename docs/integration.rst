@@ -1,5 +1,5 @@
 Paylot Inline
--------------
+=============
 
 Paylot inline javascript client offers a simple, secure and convenient
 payment flow for web and mobile. It can be integrated with a line of

@@ -18,11 +18,6 @@ prefer to store it as (For now, Naira).
 
 Once you are done. You are good to go.
 
-.. toctree:: 
-   :caption: Table of Contents 
-   :maxdepth: 2
+.. toctree:: :caption: Table of Contents :maxdepth: 2
 
-   index 
-   integration 
-   verification 
-   split-payment
+index integration verification split-payment

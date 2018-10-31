@@ -14,7 +14,7 @@ dashboard.
 Requirements
 ------------
 
-**API Url:** ``https://api.paylot.co`` 
+**API Url:** ``https://api.paylot.co``
 
 All requests accept and return **JSON**.
 
