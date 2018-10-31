@@ -14,8 +14,9 @@ dashboard.
 Requirements
 ------------
 
-**API Url:** ``https://api.paylot.co`` All requests accept and return
-**JSON**.
+**API Url:** ``https://api.paylot.co`` 
+
+All requests accept and return **JSON**.
 
 For all stated requests, it’s required that you specify your **secret
 key** in the authorization header i.e
