@@ -1,27 +1,15 @@
-Introduction
-============
+Paylot Integration
+==================
 
-This is the documentation for integration of Paylot inline javascript
-client.
+This is the official documentation for the integration of Paylot.
 
-**NB:** Before you can start integrating Paylot, you will need a Paylot
-account. Create a free account now if you haven’t already done so:
-https://beta.paylot.co/signup.
+For integration of the available SDKs and libraries, check out the
+following.
 
-After that, you can proceed to add a merchant/business at
-https://beta.paylot.co/businesses/create
+`Android SDK <https://github.com/paylot/paylot-android>`__
 
-Once you have added your business details, you would be required to add
-at least one payment processor to accept payments. This involves adding
-a currency you would be collecting (**BTC, ETH, LTC, BCH**) and what you
-prefer to store it as (For now, Naira).
+Other SDKs and libaries coming soon…
 
-Once you are done. You are good to go.
+.. toctree:: :caption: Table of Contents :maxdepth: 2
 
-.. toctree::
-   :caption: Table of Contents
-   :maxdepth: 2
-
-   integration
-   verification
-   split-payment
+introduction integration verification split-payment
