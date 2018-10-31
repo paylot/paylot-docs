@@ -157,7 +157,9 @@ stated below.
 **NB:** These are the same parameters posted to the call back url which
 can be set in the business profile.
 
-.. See Documentation for More : https://paylot.readthedocs.io/en/latest/
+
+
+`See Documentation for More <https://paylot.readthedocs.io/en/latest/>`_
 
 .. |Image One| image:: https://res.cloudinary.com/dozie/image/upload/v1536582441/paylot_instructions_01.png
 .. |Image Two| image:: https://res.cloudinary.com/dozie/image/upload/v1536582444/paylot_instructions_02.png
