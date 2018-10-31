@@ -20,6 +20,7 @@ Once you are done. You are good to go.
 
 .. toctree::
    :caption: Table of Contents
+   :titlesonly:
    :maxdepth: 2
 
    index
