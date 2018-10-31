@@ -10,6 +10,11 @@ following.
 
 Other SDKs and libaries coming soon…
 
-.. toctree:: :caption: Table of Contents :maxdepth: 2
+.. toctree::
+   :caption: Table of Contents
+   :maxdepth: 2
 
-introduction integration verification split-payment
+   introduction
+   integration
+   verification
+   split-payment
