@@ -18,12 +18,12 @@ secret key can be obtained at the business profile page.
 
 This key should never be exposed to the public and is of the format:
 
-\_pyt_sk-123455***\_
+*pyt_sk-123455****
 
 To send a request, use bearer authentication with your secret key as
 token i.e. add this to your request header.
 
-\_Authorization: Bearer pyt_sk-123455***\_
+*Authorization: Bearer pyt_sk-123455****
 
 The API returns an object with the parameters described below.
 
