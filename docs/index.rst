@@ -8,6 +8,8 @@ following.
 
 `Android SDK <https://github.com/paylot/paylot-android>`__
 
+`Woocommerce Plugin <https://github.com/paylot/woo-paylot>`__
+
 Other SDKs and libaries coming soon…
 
 .. toctree::
