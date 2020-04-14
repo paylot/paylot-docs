@@ -11,7 +11,7 @@ Here is a sample code that calls Paylot and also handles outcome.
 
 **NB:** Please, note that the key used is your merchant key. To get this
 key, go to your merchant profile by clicking one of your businesses on
-your dashboard @ https://beta.paylot.co/dashboard and then clicking
+your dashboard @ https://paylot.co/dashboard and then clicking
 profile on the sidebar.
 
 +-------------------+------------------+
@@ -78,6 +78,9 @@ Configuration options
 +-----------------------------------+-----------------------------------+
 | currency\*                        | The base currency (NGN, BTC, ETH, |
 |                                   | LTC & BCH allowed) (string)       |
++-----------------------------------+-----------------------------------+
+| subaccount                        | The reference for the subaccount  | 
+|                                   | if available (for split payments).|
 +-----------------------------------+-----------------------------------+
 | payload.email                     | The email of the customer         |
 |                                   | (string)                          |
