@@ -10,6 +10,8 @@ following.
 
 `Woocommerce Plugin <https://github.com/paylot/woo-paylot>`__
 
+`PHP SDK <https://github.com/paylot/paylot-php>`__
+
 Other SDKs and libaries coming soon…
 
 .. toctree::
