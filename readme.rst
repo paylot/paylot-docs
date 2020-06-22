@@ -6,15 +6,15 @@ client.
 
 **NB:** Before you can start integrating Paylot, you will need a Paylot
 account. Create a free account now if you haven’t already done so:
-https://beta.paylot.co/signup.
+https://paylot.co/signup.
 
 After that, you can proceed to add a merchant/business at
-https://beta.paylot.co/businesses/create
+https://paylot.co/businesses/create
 
 Once you have added your business details, you would be required to add
 at least one payment processor to accept payments. This involves adding
 a currency you would be collecting (**BTC, ETH, LTC, BCH**) and what you
-prefer to store it as (For now, Naira).
+prefer to store it as (**NGN, USDT, USDC, PAX, BUSD**).
 
 Once you are done. You are good to go.
 
@@ -28,7 +28,7 @@ Here is a sample code that calls Paylot and also handles outcome.
 
 **NB:** Please, note that the key used is your merchant key. To get this
 key, go to your merchant profile by clicking one of your businesses on
-your dashboard @ https://beta.paylot.co/dashboard and then clicking
+your dashboard @ https://paylot.co/dashboard and then clicking
 profile on the sidebar.
 
 +-------------------+------------------+

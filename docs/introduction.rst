@@ -13,6 +13,6 @@ https://paylot.co/businesses/create
 Once you have added your business details, you would be required to add
 at least one payment processor to accept payments. This involves adding
 a currency you would be collecting (**BTC, ETH, LTC, BCH, BNB, BUSD**) and what you
-prefer to store it as (For now, Naira).
+prefer to store it as (**NGN, USDT, USDC, PAX, BUSD**).
 
 Once you are done. You are good to go.
