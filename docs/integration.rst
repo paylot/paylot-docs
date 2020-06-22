@@ -160,7 +160,7 @@ stated below.
 **NB:** These are the same parameters posted to the call back url which
 can be set in the business profile.
 
-3.Paylot Standard
+2. Paylot Standard
 -----------------
 
 This is necessary when you want a fully customized experience. We provides an API endpoint you can use to generate a wallet address, memo (BEP32 tokens) and the amount the customer is required to send. You are free to customize your interface the interface used to display the wallet address, amount and memo. To initialize the transaction, you are expected to use the following:
