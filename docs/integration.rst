@@ -89,8 +89,8 @@ This HTML code shows a simple way to integrate Paylot into your webpage.
 |                                   | not found, a random reference     |
 |                                   | would be generated (string)       |
 +-----------------------------------+-----------------------------------+
-| currency\*                        | The base currency (NGN, BTC, ETH, |
-|                                   | LTC & BCH allowed) (string)       |
+| currency\*                        | The base currency (NGN, USD, BTC, |
+|                                   | ETH, LTC & BCH allowed) (string)  |
 +-----------------------------------+-----------------------------------+
 | subaccount                        | The reference for the subaccount  |
 |                                   | if available (for split payments).|
@@ -217,7 +217,8 @@ The expected request is a JSON object of the format stated below.
 | data.amount \*                       | This amount you want to charge | 
 +--------------------------------------+--------------------------------+
 | data.currency \*                     | This ISO code for the currency |
-|                                      | you are charging in.           |
+|                                      | you are charging in. eg. NGN,  |
+|                                      | USD, etc                       |
 +--------------------------------------+--------------------------------+
 
 Response
