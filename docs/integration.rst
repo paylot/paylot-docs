@@ -169,7 +169,7 @@ This is necessary when you want a fully customized experience. We provides an AP
 
 .. code:: js
 
-   GET https://api.paylot.co/transactions/initialize
+   POST https://api.paylot.co/transactions/initialize
 
 Request
 ~~~~~~~
